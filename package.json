@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-css-cc",
+  "version": "1.0.0",
+  "description": "Learning Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/champer3/Tailwind-CSS-CC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/champer3/Tailwind-CSS-CC/issues"
+  },
+  "homepage": "https://github.com/champer3/Tailwind-CSS-CC#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}
