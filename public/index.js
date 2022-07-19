@@ -100,4 +100,6 @@ var runningSum = function (nums) {
   return newArr;
 };
 
-console.log(runningSum([1, 2, 3, 4, 5]));
+// console.log(runningSum([1, 2, 3, 4, 5]));
+
+function anagram(str1, str2) {}
