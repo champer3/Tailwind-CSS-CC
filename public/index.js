@@ -31,6 +31,8 @@ for (key of arr) {
 }
 // console.log(obj);
 
+// ........................................  FREQUENCY COUNTER  ....................................................
+
 // Write a function called "same", which accepts two arrays. The function should return true if every value in the array has it's corresponding value squared in the second array. The frequency of the value must be the same
 
 // Big O of n 0(n^2) solution
@@ -125,6 +127,8 @@ function anagram(str1, str2) {
 }
 
 // console.log(anagram("zazu", "uzaz"));
+
+// ........................................  MULTIPLE POINTERS  ....................................................
 
 function sumZero(arr) {
   for (let i = 0; i < arr.length; i++) {
@@ -241,5 +245,29 @@ function sameFrequency(n, m) {
   return true;
 }
 
-console.log(sameFrequency(122, 132));
+// console.log(sameFrequency(122, 132));
 
+// Implement a function called areThereDuplicates which accepts a variable number of arguments, and check whether there are any
+// duplicates among the arguments passed in. 
+
+function areThereDuplicates() {
+  // good luck. (supply any arguments you deem necessary.)
+  let obj = {};
+  for (val in arguments) {
+    obj[arguments[val]] = obj[arguments[val]] + 1 || 1;
+  }
+  for (key in obj) {
+    if (obj[key] > 1) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function areThereDuplicatess(...args) {
+  let sortted = args.sort((a, b) => a > b);
+  console.log(sortted);
+}
+
+// console.log(areThereDuplicates(1, 2, 3, 5, 4, 5));
+areThereDuplicatess(2, 1, 3, 5, 4, 5);
